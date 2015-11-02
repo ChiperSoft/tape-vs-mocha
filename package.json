@@ -1,0 +1,28 @@
+{
+  "name": "testingexample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mocha": "mocha mocha/test.js",
+    "tape": "tap tape/test.js",
+    "tape-raw": "node tape/test.js",
+    "mocha-works": "mocha mocha/test-working.js",
+    "cover": "rm -rf coverage && istanbul cover node_modules/.bin/tape tape/*",
+    "cover-mocha": "rm -rf coverage && istanbul cover node_modules/.bin/_mocha mocha/*",
+    "tape2": "tap tape/test2.js",
+    "mocha2": "mocha mocha/test2.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.0.2",
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.2",
+    "tap": "^2.2.0",
+    "tap-dot": "^1.0.0",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.2"
+  }
+}
